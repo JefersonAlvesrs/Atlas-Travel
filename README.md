@@ -7,7 +7,7 @@ O projeto apresenta destinos turísticos ao redor do mundo, permitindo explorar 
 
 ## 🌐 Projeto online
 
-O link da versão publicada será adicionado após a publicação no GitHub Pages.
+https://jefersonalvesrs.github.io/Atlas-Travel/
 
 ## 🖼️ Preview
 
