@@ -1,68 +1,310 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Atlas Travel: explore destinos, descubra experiências e planeje sua próxima viagem.">
-  <title>Atlas Travel — Vá além do roteiro</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header class="header" id="inicio">
-    <div class="container nav">
-      <a class="logo" href="#inicio" aria-label="Atlas Travel, início"><span class="logo-mark">✳</span> ATLAS<span class="logo-light">TRAVEL</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
-        <a href="#destinos">Destinos</a><a href="#experiencias">Experiências</a><a href="#planejador">Planeje sua viagem</a>
-        <button class="nav-favorites" id="favoritesNav" type="button">♡ Favoritos <span id="favoriteCount">0</span></button>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-image" role="img" aria-label="Costa italiana com mar azul e casas coloridas"></div>
-      <div class="hero-shade"></div>
-      <div class="container hero-content">
-        <div class="eyebrow light">✦ DESCUBRA O EXTRAORDINÁRIO</div>
-        <h1>O mundo é grande.<br><em>Vá mais longe.</em></h1>
-        <p>Destinos inesquecíveis, experiências autênticas e histórias que começam com uma passagem.</p>
-        <a href="#destinos" class="btn btn-primary">Explorar destinos <span>↗</span></a>
-        <div class="hero-proof"><span>✦ Curadoria de destinos</span><span>✦ Planejamento inteligente</span><span>✦ Inspire sua próxima viagem</span></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Atlas Travel: explore destinos, descubra experiências e planeje sua próxima viagem."
+    />
+    <title>Atlas Travel — Vá além do roteiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header" id="inicio">
+      <div class="container nav">
+        <a class="logo" href="#inicio" aria-label="Atlas Travel, início"
+          ><span class="logo-mark">✳</span> ATLAS<span class="logo-light"
+            >TRAVEL</span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+          <a href="#destinos">Destinos</a
+          ><a href="#experiencias">Experiências</a
+          ><a href="#planejador">Planeje sua viagem</a>
+          <button class="nav-favorites" id="favoritesNav" type="button">
+            ♡ Favoritos <span id="favoriteCount">0</span>
+          </button>
+        </nav>
       </div>
-      <div class="hero-counter"><strong>01</strong> / 03 <span>— O mundo espera</span></div>
-    </section>
+    </header>
 
-    <section class="stats container" aria-label="Destaques"><div><strong>12</strong><span>destinos inspiradores</span></div><div><strong>5</strong><span>continentes para explorar</span></div><div><strong>∞</strong><span>histórias para viver</span></div><div><strong>100%</strong><span>inspiração para viajar</span></div></section>
-
-    <section class="section destinations" id="destinos">
-      <div class="container">
-        <div class="section-heading"><div><span class="eyebrow">✦ ESCOLHIDOS PARA VOCÊ</span><h2>Seu próximo destino<br><em>começa aqui.</em></h2></div><p>De cidades vibrantes a refúgios naturais. Explore lugares que merecem estar na sua lista.</p></div>
-        <div class="filters">
-          <label class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Busque um destino ou país..." aria-label="Buscar destino"></label>
-          <select id="continentFilter" aria-label="Filtrar por continente"><option value="all">Todos os continentes</option><option value="Europa">Europa</option><option value="Ásia">Ásia</option><option value="América do Sul">América do Sul</option><option value="América do Norte">América do Norte</option><option value="África">África</option></select>
-          <select id="budgetFilter" aria-label="Filtrar por orçamento"><option value="all">Qualquer orçamento</option><option value="5000">Até R$ 5.000</option><option value="10000">Até R$ 10.000</option><option value="15000">Até R$ 15.000</option></select>
-          <select id="sortFilter" aria-label="Ordenar destinos"><option value="featured">Destaques</option><option value="low">Menor preço</option><option value="high">Maior preço</option></select>
+    <main>
+      <section class="hero">
+        <div
+          class="hero-image"
+          role="img"
+          aria-label="Costa italiana com mar azul e casas coloridas"
+        ></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <div class="eyebrow light">✦ DESCUBRA O EXTRAORDINÁRIO</div>
+          <h1>O mundo é grande.<br /><em>Vá mais longe.</em></h1>
+          <p>
+            Destinos inesquecíveis, experiências autênticas e histórias que
+            começam com uma passagem.
+          </p>
+          <a href="#destinos" class="btn btn-primary"
+            >Explorar destinos <span>↗</span></a
+          >
+          <div class="hero-proof">
+            <span>✦ Curadoria de destinos</span
+            ><span>✦ Planejamento inteligente</span
+            ><span>✦ Inspire sua próxima viagem</span>
+          </div>
         </div>
-        <div class="results-line"><span id="resultsCount">12 destinos encontrados</span><button id="clearFilters" type="button">Limpar filtros ↺</button></div>
-        <div class="destination-grid" id="destinationGrid"></div>
-        <div class="empty-state" id="emptyState" hidden><span>✳</span><h3>Nenhum destino encontrado</h3><p>Tente mudar sua busca ou os filtros selecionados.</p></div>
+        <div class="hero-counter">
+          <strong>01</strong> / 03 <span>— O mundo espera</span>
+        </div>
+      </section>
+
+      <section class="stats container" aria-label="Destaques">
+        <div><strong>12</strong><span>destinos inspiradores</span></div>
+        <div><strong>5</strong><span>continentes para explorar</span></div>
+        <div><strong>∞</strong><span>histórias para viver</span></div>
+        <div><strong>100%</strong><span>inspiração para viajar</span></div>
+      </section>
+
+      <section class="section destinations" id="destinos">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">✦ ESCOLHIDOS PARA VOCÊ</span>
+              <h2>Seu próximo destino<br /><em>começa aqui.</em></h2>
+            </div>
+            <p>
+              De cidades vibrantes a refúgios naturais. Explore lugares que
+              merecem estar na sua lista.
+            </p>
+          </div>
+          <div class="filters">
+            <label class="search-wrap"
+              ><span>⌕</span
+              ><input
+                id="searchInput"
+                type="search"
+                placeholder="Busque um destino ou país..."
+                aria-label="Buscar destino"
+            /></label>
+            <select id="continentFilter" aria-label="Filtrar por continente">
+              <option value="all">Todos os continentes</option>
+              <option value="Europa">Europa</option>
+              <option value="Ásia">Ásia</option>
+              <option value="América do Sul">América do Sul</option>
+              <option value="América do Norte">América do Norte</option>
+              <option value="África">África</option>
+            </select>
+            <select id="budgetFilter" aria-label="Filtrar por orçamento">
+              <option value="all">Qualquer orçamento</option>
+              <option value="5000">Até R$ 5.000</option>
+              <option value="10000">Até R$ 10.000</option>
+              <option value="15000">Até R$ 15.000</option>
+            </select>
+            <select id="sortFilter" aria-label="Ordenar destinos">
+              <option value="featured">Destaques</option>
+              <option value="low">Menor preço</option>
+              <option value="high">Maior preço</option>
+            </select>
+          </div>
+          <div class="results-line">
+            <span id="resultsCount">12 destinos encontrados</span
+            ><button id="clearFilters" type="button">Limpar filtros ↺</button>
+          </div>
+          <div class="destination-grid" id="destinationGrid"></div>
+          <div class="empty-state" id="emptyState" hidden>
+            <span>✳</span>
+            <h3>Nenhum destino encontrado</h3>
+            <p>Tente mudar sua busca ou os filtros selecionados.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-section" id="experiencias">
+        <div class="container experience-layout">
+          <div class="experience-photo">
+            <div class="photo-caption">DESCUBRA MAIS · VIVA MAIS</div>
+          </div>
+          <div class="experience-text">
+            <span class="eyebrow">✦ VIAJAR É SENTIR</span>
+            <h2>Colecione momentos,<br /><em>não apenas lugares.</em></h2>
+            <p>
+              Uma viagem vai além do destino. É sobre provar algo novo, se
+              perder em ruas desconhecidas e encontrar histórias para contar por
+              toda a vida.
+            </p>
+            <div class="experience-list">
+              <div>
+                <span>01</span>
+                <div>
+                  <strong>Descubra</strong
+                  ><small>Explore paisagens e culturas extraordinárias.</small>
+                </div>
+              </div>
+              <div>
+                <span>02</span>
+                <div>
+                  <strong>Planeje</strong
+                  ><small
+                    >Monte uma estimativa para a sua próxima aventura.</small
+                  >
+                </div>
+              </div>
+              <div>
+                <span>03</span>
+                <div>
+                  <strong>Viva</strong
+                  ><small>Transforme planos em memórias inesquecíveis.</small>
+                </div>
+              </div>
+            </div>
+            <a class="text-link" href="#planejador"
+              >Comece a planejar <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section planner-section" id="planejador">
+        <div class="container planner-layout">
+          <div class="planner-copy">
+            <span class="eyebrow">✦ SUA VIAGEM, DO SEU JEITO</span>
+            <h2>O próximo capítulo<br /><em>é seu.</em></h2>
+            <p>
+              Escolha um destino, defina a duração e a quantidade de viajantes.
+              Nosso planejador faz uma estimativa para ajudar você a começar.
+            </p>
+            <div class="planner-note">
+              ⓘ Valores demonstrativos por pessoa, incluindo uma estimativa de
+              transporte e hospedagem. Não representam ofertas ou reservas
+              reais.
+            </div>
+          </div>
+          <div class="planner-card">
+            <div class="planner-top">
+              <span>PLANEJADOR DE VIAGEM</span><span>✳ ATLAS</span>
+            </div>
+            <form id="plannerForm">
+              <label for="plannerDestination">Para onde vamos?</label
+              ><select id="plannerDestination" required></select>
+              <div class="planner-fields">
+                <div>
+                  <label for="plannerDays">Quantos dias?</label
+                  ><input
+                    type="number"
+                    id="plannerDays"
+                    min="2"
+                    max="30"
+                    value="7"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="plannerPeople">Viajantes</label
+                  ><input
+                    type="number"
+                    id="plannerPeople"
+                    min="1"
+                    max="10"
+                    value="2"
+                    required
+                  />
+                </div>
+              </div>
+              <label for="plannerStyle">Estilo da viagem</label
+              ><select id="plannerStyle">
+                <option value="0.8">Econômico</option>
+                <option value="1" selected>Confortável</option>
+                <option value="1.45">Premium</option></select
+              ><button type="submit" class="btn btn-dark">
+                Calcular minha viagem <span>↗</span>
+              </button>
+            </form>
+            <div class="planner-result" id="plannerResult" aria-live="polite">
+              <span>ESTIMATIVA TOTAL</span
+              ><strong id="plannerTotal">R$ —</strong
+              ><small id="plannerBreakdown"
+                >Preencha os dados e calcule sua viagem.</small
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <div class="container">
+          <span>✳</span>
+          <blockquote>
+            “Viajar é descobrir que todo mundo está errado sobre os outros
+            países.”
+          </blockquote>
+          <p>— Aldous Huxley</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="#inicio"
+            ><span class="logo-mark">✳</span> ATLAS<span class="logo-light"
+              >TRAVEL</span
+            ></a
+          >
+          <p>
+            Uma janela para o mundo.<br />Feito para quem nunca para de sonhar.
+          </p>
+        </div>
+        <div>
+          <strong>EXPLORE</strong><a href="#destinos">Destinos</a
+          ><a href="#experiencias">Experiências</a
+          ><a href="#planejador">Planejador</a>
+        </div>
+        <div>
+          <strong>PROJETO</strong>
+          <p>
+            Site demonstrativo de portfólio, sem venda de pacotes ou emissão de
+            reservas.
+          </p>
+        </div>
       </div>
-    </section>
+      <div class="container footer-bottom">
+        <span
+          >© <span id="year"></span> Atlas Travel. Projeto demonstrativo.</span
+        ><span>DESIGN PARA QUEM SONHA ALTO ✳</span>
+      </div>
+    </footer>
 
-    <section class="experience-section" id="experiencias"><div class="container experience-layout"><div class="experience-photo"><div class="photo-caption">DESCUBRA MAIS · VIVA MAIS</div></div><div class="experience-text"><span class="eyebrow">✦ VIAJAR É SENTIR</span><h2>Colecione momentos,<br><em>não apenas lugares.</em></h2><p>Uma viagem vai além do destino. É sobre provar algo novo, se perder em ruas desconhecidas e encontrar histórias para contar por toda a vida.</p><div class="experience-list"><div><span>01</span><div><strong>Descubra</strong><small>Explore paisagens e culturas extraordinárias.</small></div></div><div><span>02</span><div><strong>Planeje</strong><small>Monte uma estimativa para a sua próxima aventura.</small></div></div><div><span>03</span><div><strong>Viva</strong><small>Transforme planos em memórias inesquecíveis.</small></div></div></div><a class="text-link" href="#planejador">Comece a planejar <span>↗</span></a></div></div></section>
-
-    <section class="section planner-section" id="planejador"><div class="container planner-layout"><div class="planner-copy"><span class="eyebrow">✦ SUA VIAGEM, DO SEU JEITO</span><h2>O próximo capítulo<br><em>é seu.</em></h2><p>Escolha um destino, defina a duração e a quantidade de viajantes. Nosso planejador faz uma estimativa para ajudar você a começar.</p><div class="planner-note">ⓘ Valores demonstrativos por pessoa, incluindo uma estimativa de transporte e hospedagem. Não representam ofertas ou reservas reais.</div></div><div class="planner-card"><div class="planner-top"><span>PLANEJADOR DE VIAGEM</span><span>✳ ATLAS</span></div><form id="plannerForm"><label for="plannerDestination">Para onde vamos?</label><select id="plannerDestination" required></select><div class="planner-fields"><div><label for="plannerDays">Quantos dias?</label><input type="number" id="plannerDays" min="2" max="30" value="7" required></div><div><label for="plannerPeople">Viajantes</label><input type="number" id="plannerPeople" min="1" max="10" value="2" required></div></div><label for="plannerStyle">Estilo da viagem</label><select id="plannerStyle"><option value="0.8">Econômico</option><option value="1" selected>Confortável</option><option value="1.45">Premium</option></select><button type="submit" class="btn btn-dark">Calcular minha viagem <span>↗</span></button></form><div class="planner-result" id="plannerResult" aria-live="polite"><span>ESTIMATIVA TOTAL</span><strong id="plannerTotal">R$ —</strong><small id="plannerBreakdown">Preencha os dados e calcule sua viagem.</small></div></div></div></section>
-
-    <section class="quote-section"><div class="container"><span>✳</span><blockquote>“Viajar é descobrir que todo mundo está errado sobre os outros países.”</blockquote><p>— Aldous Huxley</p></div></section>
-  </main>
-  <footer class="footer"><div class="container footer-grid"><div><a class="logo" href="#inicio"><span class="logo-mark">✳</span> ATLAS<span class="logo-light">TRAVEL</span></a><p>Uma janela para o mundo.<br>Feito para quem nunca para de sonhar.</p></div><div><strong>EXPLORE</strong><a href="#destinos">Destinos</a><a href="#experiencias">Experiências</a><a href="#planejador">Planejador</a></div><div><strong>PROJETO</strong><p>Site demonstrativo de portfólio, sem venda de pacotes ou emissão de reservas.</p></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Atlas Travel. Projeto demonstrativo.</span><span>DESIGN PARA QUEM SONHA ALTO ✳</span></div></footer>
-
-  <div class="modal-backdrop" id="modalBackdrop" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Fechar detalhes">×</button><div id="modalContent"></div></div></div>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-</body>
+    <div class="modal-backdrop" id="modalBackdrop" hidden>
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button
+          class="modal-close"
+          id="modalClose"
+          aria-label="Fechar detalhes"
+        >
+          ×
+        </button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
 </html>
